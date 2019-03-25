@@ -1,0 +1,68 @@
+package Soccer;
+
+public class SoccerTeam {
+	private String name;
+	private SoccerTrainer trainer;
+	private int tablePos;
+	private int position;
+	private int goals;
+	private int againstgoals;
+	private SoccerPlayer[] players = new SoccerPlayer[11];
+	  
+	public SoccerTeam(String name, SoccerTrainer soccerTrainer, int tablePos){
+		this.name = name;
+		this.trainer = soccerTrainer;
+		this.tablePos = tablePos;
+		position = 0;
+	}
+	
+	
+	public String getName(){
+		return this.name;
+
+	}
+	public boolean addPlayer(SoccerPlayer player){
+		if(position < 11){
+			System.out.println( "--- below 11 : " + position );
+			
+			players[position]=player;
+			position+= position;
+		
+			return true;
+		}
+		else{
+			System.out.println( "--- above 11" );
+			
+			return false;
+		}
+		
+		
+//		int i = 0;
+//		while( i < players.length ) {
+//			if( players[ i ] == null ) {
+//				// match - found an empty pos
+//				players[ i ] = player;
+//				break;
+//			}
+//			
+//			++i;
+//		}
+	}
+	
+	public void goal(int playerNumber){
+		players[ playerNumber - 1 ].increaseGoalCount();
+	}
+	
+	public void goalAgainst(){
+		againstgoals++;
+	}
+	
+	public String ratioString(){
+		return goals + ":"+againstgoals;
+	}
+	
+	
+	public String toString(){
+		return name + " | " + trainer + " | " + ratioString()+" | "+players;  
+	}
+}

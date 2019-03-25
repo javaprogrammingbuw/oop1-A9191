@@ -1,0 +1,58 @@
+package Soccer
+;
+
+public class SoccerPlayer {
+	private String name;
+	private int number;
+	private String team;
+	private int goal;
+	private int yellowCard;
+	private int redCard;
+	
+	// constructor(s)
+	public SoccerPlayer( ){
+		
+	}
+	
+	
+	// setters
+	public void assignYellowCard() {
+		this.yellowCard=1;
+	}
+	
+	public void assignRedCard() {
+		this.redCard=1;
+	}
+	
+	// getters
+	public int yellowCard() {
+		return yellowCard;
+	}
+	
+	// other methods
+	public int getNumber(){
+		return number;
+	}
+	
+	public void setNumber(int number){
+		
+		if (number<12){
+			
+		this.number = number; 
+		}
+	}
+	public String getName(){
+		return name;
+	}
+	
+
+	public SoccerTeam getTeam(){
+		this.team=team;
+		return team;
+	}
+	
+	public void increaseGoalCount(){
+		
+	}
+	
+}

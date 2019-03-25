@@ -1,0 +1,33 @@
+package SoccerPlayer;
+
+public class SoccerPlayer {
+	private String Name;
+	private int Number;
+	private String Team;
+	private int Goal;
+	private int YellowCard;
+	private int RedCard;
+	
+	// constructor(s)
+	public SoccerPlayer( ){
+		
+	}
+	
+	// setters
+	public void yellowCard(){
+		this.YellowCard=1;
+		
+	}
+	
+	public void redCard(){
+		this.RedCard=1;
+	}
+	
+	// getters
+	public int yellowCard() {
+		return YellowCard;
+	}
+	
+	// other methods
+
+}

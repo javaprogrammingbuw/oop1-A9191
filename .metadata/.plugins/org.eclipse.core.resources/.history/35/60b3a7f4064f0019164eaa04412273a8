@@ -1,0 +1,10 @@
+package Soccer;
+
+public class SoccerTrainer {
+
+	public SoccerTrainer(String name) {
+		
+		
+	}
+
+}

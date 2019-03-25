@@ -1,0 +1,15 @@
+package Soccer;
+
+public class SoccerTrainer {
+	
+	private String trainerName;
+	
+	public SoccerTrainer(String name) {
+		this.trainerName=name;
+	}
+	
+	public String toString() {
+		return trainerName;
+	}
+
+}

@@ -1,0 +1,14 @@
+package Soccer;
+
+public class SoccerTrainer {
+
+	public SoccerTrainer(String name) {
+		
+		
+	}
+	
+	public String toString() {
+		return "__PUT_YOUR_REPRESENTATION_HERE__"
+	}
+
+}

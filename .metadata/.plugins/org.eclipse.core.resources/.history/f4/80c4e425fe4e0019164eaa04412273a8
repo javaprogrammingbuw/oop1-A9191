@@ -1,0 +1,11 @@
+package Soccer;
+
+public class SoccerTeam {
+	private String name;
+	private Trainer trainer;
+	private int table;
+	private int goals;
+	private int againstgoals;
+	private SoccerPlayer a = new SoccerPlayer();
+	
+}
